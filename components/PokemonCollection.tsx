@@ -11,7 +11,7 @@ function PokemonCollection(props: Props) {
   const max = 100;
 
   return (
-    <div className="flex justify-between items-center flex-wrap text-white px-5">
+    <div className="flex justify-center items-center flex-wrap text-white px-5">
       {pokemons.map((pokemon) => {
         return (
           <PokemonList

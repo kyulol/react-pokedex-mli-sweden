@@ -12,12 +12,15 @@ function PokemonList(props: Props) {
 
   return (
     <div
-      className={`border-gray-900 border-2 flex flex-col items-center p-3 my-2.5 rounded-lg text-gray-900 font-bold ${type}`}
+      className={`border-gray-900 border-2 flex flex-col items-center p-3 m-2.5 rounded-lg text-gray-900 font-bold ${type}`}
     >
       <p># {id}</p>
       <p>{name}</p>
       <img src={image} alt={name} />
-      <p className="">type: {type}</p>
+      <p className="flex flex-col items-center">
+        <span>type:</span>
+        <span>{type}</span>
+      </p>
     </div>
   );
 }
